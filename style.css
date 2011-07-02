@@ -1,0 +1,98 @@
+*{
+    padding : 0;
+    margin : 0;
+}
+
+body{
+	height:auto;
+    margin : auto;
+    font-family: Verdana, Geneva, sans-serif;
+    width : 1050px;
+    background : url(images/archlinux-background.jpg), no-repeat, top center;
+}
+
+#corps{
+    width:800px;
+	height:auto;
+	margin:auto ;
+}
+
+#footer{
+    height : 90px;
+    border: none;
+    bottom : 0;
+    position : fixed;
+}
+
+.menu{
+    float : left;
+    clear : both;
+
+}
+
+
+.menu ul{
+    list-style-type : none;
+}
+
+.menu ul li{
+    float : left;
+    z-index : auto;
+}
+
+.menu ul li ul{
+    display:none; /*demande aux sous menus de ne pas safficher*/
+    border:none;/*enleve les bordures eventuelles*/
+}
+
+.menu ul li:hover {
+    position:relative;
+}
+
+.menu ul li:hover a {
+    /*background-color:#696969; /*change couleur dans le fond quand souris passe dessus*/
+    text-decoration:none;
+} /*Color main cells hovering mode*/
+
+.menu ul li:hover ul {
+    display:block;
+    width:5.0em;
+    position:absolute;
+    z-index:999;
+    top:1.2em;
+    margin-top:0;
+    left:0;
+}
+
+a{
+    color :#999999;
+}
+
+.menu ul li:hover ul li a {
+    white-space:normal;/*rétablir les retours à la ligne éventuels*/
+    display:block;
+    width:10.0em;
+    height:auto;
+    line-height:1.3em;
+    margin-left:-1px;
+    padding:4px 16px 4px 16px;
+    border-left:none /*rgb(175,175,175) */;
+    border-bottom: none /*rgb(175,175,175)*/;
+    /*background-color:#808080; *//*une couleur de fond*/
+    font-weight:normal;
+    /*color:rgb(50,50,50);*/
+}
+
+#transparent{
+    opacity: 0.5;
+    filter:alpha(opacity=50);
+    background: url(image/bar_tache.png);
+    position: absolute;
+    z-index:-1;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    width:850;
+    height:auto;
+}

@@ -1,0 +1,80 @@
+#taskbar{
+    position : fixed;
+    bottom : 0;
+    min-width : 960px;
+    width : 90%;
+    background-color : #D2B48C;
+    border-radius : 15px;
+
+    .menugroup{
+
+        &.level1{
+            line-height: 32px;
+            vertical-align: middle;
+            margin: 0;
+            text-align: center;
+
+            .itemlevel1.item4{
+                float: right;
+            }
+
+            > div{
+                float : left;
+                width : 200px;
+                display : block;
+
+                .label{
+                    cursor : default;
+                    color : #8B4513;
+                    opacity : inherit;
+                    font-weight : bold;
+                }
+
+                .level2{
+                    line-height : 20px;
+                    vertical-align : middle;
+                    position : absolute;
+                    left : auto;
+                    bottom : 32px;
+                    margin : 0;
+                    .itemlevel2:hover{
+                        width : auto;
+                        white-space : normal;
+                        background-color : #8B4513;
+                        margin-bottom : 5px;
+                        font-size : 18px;
+                        border-radius : 15px;
+                    }
+
+                    .itemlevel2 a{
+                        text-decoration : none;
+                        color : #9ACD32;
+                        font-weight : bold ;
+                    }
+
+
+
+                    > div {
+                        opacity :inherit;
+                        color : inherit;
+                    }
+                }
+            }
+
+            .itemlevel1:hover .level2 {
+                display: block;
+            }
+        }
+
+        .level2{
+            display : none;
+            position : absolute;
+
+            text-align : center;
+            width : 200px;
+            left : 0px;
+            display : none;
+            bottom : -32px;
+        }
+    }
+}

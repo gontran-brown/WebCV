@@ -1,0 +1,107 @@
+html {
+  background-attachment: fixed;
+  background-clip: border-box;
+  background: url(images/arch_linux.png) no-repeat center center fixed;
+  background-color: transparent;
+  background-origin: padding-box;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+html, body {
+  margin: 0;
+  padding: 0;
+  min-width: 1066px;
+  overflow: auto;
+}
+#container {
+  margin-left: 5%;
+  margin-right: 5%;
+  min-width: 960px;
+  width: 90%;
+  position: fixed;
+}
+#taskbar {
+  position: fixed;
+  bottom: 0;
+  min-width: 960px;
+  width: 90%;
+  background-color: #D2B48C;
+  border-radius: 15px;
+}
+#taskbar .menugroup.level1 {
+  line-height: 32px;
+  vertical-align: middle;
+  margin: 0;
+  text-align: center;
+}
+#taskbar .menugroup.level1 .itemlevel1.item4 {
+  float: right;
+}
+#taskbar .menugroup.level1 > div {
+  float: left;
+  width: 200px;
+  display: block;
+}
+#taskbar .menugroup.level1 > div .label {
+  cursor: default;
+  color: #8B4513;
+  opacity: inherit;
+  font-weight: bold;
+}
+#taskbar .menugroup.level1 > div .level2 {
+  line-height: 20px;
+  vertical-align: middle;
+  position: absolute;
+  left: auto;
+  bottom: 32px;
+  margin: 0;
+}
+#taskbar .menugroup.level1 > div .level2 .itemlevel2:hover {
+  width: auto;
+  white-space: normal;
+  background-color: #8B4513;
+  margin-bottom: 5px;
+  font-size: 18px;
+  border-radius: 15px;
+}
+#taskbar .menugroup.level1 > div .level2 .itemlevel2 a {
+  text-decoration: none;
+  color: #9ACD32;
+  font-weight: bold ;
+}
+#taskbar .menugroup.level1 > div .level2 > div {
+  opacity: inherit;
+  color: inherit;
+}
+#taskbar .menugroup.level1 .itemlevel1:hover .level2 {
+  display: block;
+}
+#taskbar .menugroup .level2 {
+  display: none;
+  position: absolute;
+  text-align: center;
+  width: 200px;
+  left: 0px;
+  display: none;
+  bottom: -32px;
+}
+#window {
+  border-radius: 15px;
+}
+#window .label {
+  opacity: inherit;
+  background: #D2B48C;
+  z-index: 0 ;
+  float: left;
+  border: solid 1px none;
+  border-radius: 13px 13px 1px 1px;
+  width: 99% ;
+  font-weight: bold;
+  color: #8B4513;
+  padding-left: 15px;
+}
+#window .body {
+  text-align: center;
+  overflow: auto;
+}
