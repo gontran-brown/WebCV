@@ -66,13 +66,13 @@
         <meta name="description" content="" />
         <meta name="keywords" content="" />
         <title>CV Soumia ADJIR</title>
-        <link rel="stylesheet" type="text/css" href="webCV.css" media="screen" />
+        <link rel="stylesheet" type="text/css" href="css/webCV.css" media="screen" />
     </head>
     <body>
        <!--<img src="images/arch_linux.png" id="background" alt="mon background" /> -->
         <div id="container">
             <div id="window">
-                <div class="label"><?php echo $arraypage[$pageactive]["label"];  ?></div>
+                <div class="label"><span><?php echo $arraypage[$pageactive]["label"];?><span></div>
                 <div class="body">
                 <?php include("pages/$page.php");?>
                 </div>

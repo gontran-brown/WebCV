@@ -1,7 +1,7 @@
 html {
   background-attachment: fixed;
   background-clip: border-box;
-  background: url(images/arch_linux.png) no-repeat center center fixed;
+  background: url(../images/arch_linux.png) no-repeat center center fixed;
   background-color: transparent;
   background-origin: padding-box;
   background-position: center center;
@@ -11,21 +11,14 @@ html {
 html, body {
   margin: 0;
   padding: 0;
-  min-width: 1066px;
-  overflow: auto;
-}
-#container {
-  margin-left: 5%;
-  margin-right: 5%;
-  min-width: 960px;
-  width: 90%;
-  position: fixed;
+  min-width: 1016.6666666666666px;
 }
 #taskbar {
   position: fixed;
-  bottom: 0;
-  min-width: 960px;
   width: 90%;
+  min-width: 915px;
+  margin: 0 5%;
+  bottom: 0;
   background-color: #D2B48C;
   border-radius: 15px;
 }
@@ -84,21 +77,38 @@ html, body {
   width: 200px;
   left: 0px;
   display: none;
-  bottom: -32px;
+  bottom: - 32px;
 }
 #window {
   border-radius: 15px;
 }
 #window .label {
-  opacity: inherit;
+  position: fixed;
+  width: 90%;
+  min-width: 915px;
+  margin: 0 5%;
   background: #D2B48C;
   border: solid 1px none;
+  line-height: 20px;
   border-radius: 13px 13px 1px 1px;
   font-weight: bold;
   color: #8B4513;
+}
+#window .label span {
   padding-left: 15px;
 }
 #window .body {
+  position: fixed;
+  width: 90%;
+  min-width: 915px;
+  margin: 0 5%;
+  top: 20px;
+  bottom: 32px;
   text-align: center;
+  background-color: rgba(84, 90, 125, 0.6);
   overflow: auto;
+}
+#window .body h3 {
+  margin: 0;
+  padding-top: 10px;
 }

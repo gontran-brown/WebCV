@@ -1,15 +1,13 @@
 #taskbar{
-    position : fixed;
+    .centering();
     bottom : 0;
-    min-width : 960px;
-    width : 90%;
     background-color : #D2B48C;
     border-radius : 15px;
 
     .menugroup{
 
         &.level1{
-            line-height: 32px;
+            line-height: @footer-bar;
             vertical-align: middle;
             margin: 0;
             text-align: center;
@@ -35,8 +33,9 @@
                     vertical-align : middle;
                     position : absolute;
                     left : auto;
-                    bottom : 32px;
+                    bottom : @footer-bar;
                     margin : 0;
+
                     .itemlevel2:hover{
                         width : auto;
                         white-space : normal;
@@ -74,7 +73,7 @@
             width : 200px;
             left : 0px;
             display : none;
-            bottom : -32px;
+            bottom : -@footer-bar;
         }
     }
 }
