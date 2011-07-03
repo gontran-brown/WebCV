@@ -50,10 +50,10 @@
         $nopage = false;
     }
 
-    $page = $arraypage[$pageactive]['file'];
+    $page = $arraypage[$pageactive]["file"];
     if ($nopage && !file_exists("pages/$page.php")){
         $pageactive = $defaultpage;
-        $page = $arraypage[$pageactive]['file'];
+        $page = $arraypage[$pageactive]["file"];
         $nopage = false;
     }
 ?>
@@ -74,7 +74,7 @@
             <div id="window">
                 <div class="label"><?php echo $arraypage[$pageactive]["label"];  ?></div>
                 <div class="body">
-                    <?php include("pages/$page.php"); ?>
+                    <?php include('pages/'.$page.'.php'); ?>
                 </div>
             </div>
 
