@@ -74,7 +74,7 @@
             <div id="window">
                 <div class="label"><?php echo $arraypage[$pageactive]["label"];  ?></div>
                 <div class="body">
-                    <?php include('pages/'.$page.'.php'); ?>
+                <?php include("pages/$page.php");?>
                 </div>
             </div>
 
