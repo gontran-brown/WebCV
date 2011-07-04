@@ -1,27 +1,27 @@
+@width-page : 915px;
+@title-bar : 20px;
+@footer-bar : 32px;
+
+.centering(){
+    position : fixed;
+    width : 90%;
+    min-width : @width-page;
+    margin : 0 5%;
+}
+
 html{
     background-attachment : fixed;
     background-clip : border-box;
-    background : url(images/arch_linux.png) no-repeat center center fixed;
+    background : url(../images/arch_linux.png) no-repeat center center fixed;
     background-color : transparent;
     background-origin : padding-box;
     background-position : center center;
     background-repeat : no-repeat;
     background-size : cover;
-
 }
 
 html,body{
     margin : 0;
     padding : 0;
-    min-width : 1066px;
-    overflow : auto;
+    min-width : @width-page + (@width-page * 10)/90;
 }
-
-#container{
-    margin-left : 5%;
-    margin-right : 5%;
-    min-width : 960px;
-    width : 90%;
-    position : fixed;
-}
-

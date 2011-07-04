@@ -1,7 +1,7 @@
 html {
   background-attachment: fixed;
   background-clip: border-box;
-  background: url(images/arch_linux.png) no-repeat center center fixed;
+  background: url(../images/arch_linux.png) no-repeat center center fixed;
   background-color: transparent;
   background-origin: padding-box;
   background-position: center center;
@@ -11,21 +11,14 @@ html {
 html, body {
   margin: 0;
   padding: 0;
-  min-width: 1066px;
-  overflow: auto;
-}
-#container {
-  margin-left: 5%;
-  margin-right: 5%;
-  min-width: 960px;
-  width: 90%;
-  position: fixed;
+  min-width: 1016.6666666666666px;
 }
 #taskbar {
   position: fixed;
-  bottom: 0;
-  min-width: 960px;
   width: 90%;
+  min-width: 915px;
+  margin: 0 5%;
+  bottom: 0;
   background-color: #D2B48C;
   border-radius: 15px;
 }

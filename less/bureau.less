@@ -1,0 +1,31 @@
+#window {
+    border-radius : 15px;
+
+    .label{
+        .centering();
+        background : #D2B48C;
+        border : solid 1px none;
+        line-height : @title-bar;
+        border-radius : 13px 13px 1px 1px;
+        font-weight : bold;
+        color : #8B4513;
+
+        span{
+            padding-left : 15px;
+        }
+    }
+    .body{
+        .centering();
+        top : @title-bar;
+        bottom : @footer-bar + 20px;
+        text-align : center;
+        background-color : rgba(84, 90, 125, 0.6);
+        overflow : auto;
+
+        h3{
+            margin : 0;
+            padding-top : 10px;
+        }
+    }
+}
+
