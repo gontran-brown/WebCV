@@ -52,7 +52,7 @@
 						}
 					//-->
 					</script>
-					<h3>Coordonnées</h3>
+					<h1>Coordonnées</h1>
 					<p class="subtitle">Voici mes différentes coordonnées : </p>
 					<ul>
 						<li><span>Téléphone : </span>06 78 68 20 00</li>
@@ -65,7 +65,7 @@
 						</li>
 					</ul>
 	<?php if (empty($_POST)){ ?>
-					<h3>Formulaire de contact</h3>
+					<h1>Formulaire de contact</h1>
 					<p class="desc">Vous désirez me contacter mais vous n'avez pas les outils pour, c'est ici :</p>
 					<p class="info">les champs suivis du symbole * sont obligatoires</p>
 					<form id="contact-form" action="traitement_message.php" method="post" enctype="application/x-www-form-urlencoded" onsubmit="return check();">

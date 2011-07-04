@@ -90,7 +90,6 @@ html, body {
   border-radius: 15px;
 }
 #window .label {
-  opacity: inherit;
   background: #D2B48C;
   border: solid 1px none;
   border-radius: 13px 13px 1px 1px;
@@ -101,4 +100,32 @@ html, body {
 #window .body {
   text-align: center;
   overflow: auto;
+  color: #D2B48C;
+}
+#window .body h1 {
+  margin: 10px 0px 9px 0px;
+  font-weight: bold;
+  font-size: 1.5em;
+  color: #79a004;
+  text-align: justify;
+}
+#window .body p {
+  text-indent: 70px ;
+  text-align: justify;
+}
+#window .body ul {
+  list-style-position: inside;
+}
+#window .body li {
+  list-style-position: outside;
+  text-align: justify;
+}
+#window .body ul li:before {
+  content: "# ";
+}
+#window .body ul li {
+  list-style-type: none;
+}
+#window .body a {
+  text-decoration: none;
 }

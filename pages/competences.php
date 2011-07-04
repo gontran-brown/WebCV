@@ -1,11 +1,11 @@
-					<h3>Gestion De Projet</h3>
+					<h1>Gestion De Projet</h1>
 					<ul>
 						<li>Etude approfondie du projet auprès des futurs utilisateurs</li>
 						<li>Formulation d'un cahier des charges</li>
 						<li>Estimation du temps et répartition des tâches</li>
 						<li>Élaboration et suivi de planning projet</li>
 					</ul>
-					<h3>Compétences Techniques</h3>
+					<h1>Compétences Techniques</h1>
 					<ul>
 						<li><span>Systèmes</span><br />
 							<ul>
@@ -29,7 +29,7 @@
 							</ul>
 						</li>
 					</ul>
-					<h3>Compétences Linguistiques</h3>
+					<h1>Compétences Linguistiques</h1>
 					<ul>
 						<li><span>Anglais</span><br />
 							<ul>

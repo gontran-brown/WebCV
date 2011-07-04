@@ -14,7 +14,7 @@
 
         "exp" => array(
             'file' => "experiences",
-            'label' => "Exeperience"
+            'label' => "Experience"
         ),
 
         "form" => array(
@@ -69,7 +69,6 @@
         <link rel="stylesheet" type="text/css" href="webCV.css" media="screen" />
     </head>
     <body>
-       <!--<img src="images/arch_linux.png" id="background" alt="mon background" /> -->
         <div id="container">
             <div id="window">
                 <div class="label"><?php echo $arraypage[$pageactive]["label"];  ?></div>
