@@ -7,8 +7,9 @@
             .toggle();
         });
 
-        $("#choice .itemlevel2 a").click(function(){
-            $("#body_window").empty();
+        $("#taskbar .level1.menugroup .itemlevel1.item1 :regex(class,^itemlevel2 item\\d+$)").click(function(e){
+            $button_menu = $(this);
+            $("div.body").empty();
             var txt = $(this).attr("title");
             console.log(txt);
             var page = txt+".php";
