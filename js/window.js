@@ -7,24 +7,31 @@
             .toggle();
         });
 
-        $("#taskbar .level1.menugroup .itemlevel1.item1 :regex(class,^itemlevel2 item\\d+$)").children("a").click(function(event){
-            event.preventDefault();
-
+        $("#taskbar .level1.menugroup .itemlevel1.item1 :regex(class,^itemlevel2 item\\d+$)").children("a").click(function(e){
+            e.preventDefault();
             var $button_menu = $(this);
-            $button_menu
-                .parents("#container")
-                .find("#window div.body")
-                .empty();
-            var txt = $(this).attr("title");
-            console.log(txt);
-            var page = txt+".php";
-            console.log(page);
+            var $body_window = $button_menu
+            .parents("#container")
+            .find("#window div.body");
+
+            $body_window.empty();
+            var page_url = $button_menu.attr("href");
+
+            var $title_window = $button_menu
+            .parents("#container")
+            .find("#window div.label");
+            title_page = $(this).text();
+            console.log(title_page);
+            $title_window.empty();
+            $title_window.append(title_page);
 
             $.ajax({
                 type : "GET",
-                url : page,
-                success:function(data){
-                    $("#window div.body").load(data);
+                url : page_url,
+                cache : false,
+                success : function(data){
+                    var new_content = $("#window div.body",data);
+                    $body_window.replaceWith(new_content);
                 }
             });
         });
