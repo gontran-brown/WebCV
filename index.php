@@ -90,7 +90,7 @@
                             <span>Soumia ADJIR</span>
                         </div>
                         <div id="choice" class="level2 menugroup">
-                            <div class="itemlevel2 item1"><a title="competences">Compétences</a></div>
+                            <div class="itemlevel2 item1"><a href="index.php?page=comp" title="competences">Compétences</a></div>
                             <div class="itemlevel2 item2"><a href="index.php?page=exp"  title="experiences">Expériences</a></div>
                             <div class="itemlevel2 item3"><a href="index.php?page=form" title="formations">Formations</a></div>
                             <div class="itemlevel2 item4"><a href="index.php?page=div" title="divers">Divers</a></div>
