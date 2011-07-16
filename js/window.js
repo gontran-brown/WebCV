@@ -8,9 +8,9 @@
         });
 
         $("#choice .itemlevel2 a").click(function(){
+            $("#body_window").empty();
             var txt = $(this).attr("title");
             console.log(txt);
-            console.log("je suis ici");
             var page = txt+".php";
             console.log(page);
 
@@ -18,7 +18,7 @@
                 type : "GET",
                 url : page,
                 success:function(data){
-                    $("#body_window").text(page);
+                    $("#body_window").text(data);
                 }
             });
         });
