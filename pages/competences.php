@@ -10,20 +10,20 @@
 						<li><span>Systèmes</span><br />
 							<ul>
 								<li>Windows : 95, 98, 2000, XP</li>
-								<li>Linux : Ubuntu</li>
+								<li>Linux : Ubuntu, Archlinux</li>
 							</ul>
 						</li>
 						
 						<li><span>Langages</span><br />
 							<ul>
-								<li>Programmation impérative : Java, C++ (base), PHP, SQL, XHTML/CSS, C (base)</li>
+								<li>Programmation impérative : Java, C++ (base), PHP, SQL, XHTML/CSS, C (base), jQuery, Ajax, XML</li>
 								<li>Programmation fonctionnelle : Scheme</li>
 								<li>Programmation logique : SWI Prolog</li>
 							</ul>
 						</li>
 						<li><span>Logiciels</span><br />
 							<ul>
-								<li>Programmation : Netbeans, Eclipse, Geany</li>
+								<li>Programmation : Netbeans, Eclipse, Geany, gVim, Qt, Less, GitHub</li>
 								<li>Bureautique : Open Office, Microsoft Office</li>
 								<li>Montage d'image : GIMP (base)</li>
 							</ul>

@@ -56,6 +56,7 @@
         $page = $arraypage[$pageactive]["file"];
         $nopage = false;
     }
+    $time = @date("H:i");
 ?>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
@@ -67,22 +68,28 @@
         <meta name="keywords" content="" />
         <title>CV Soumia ADJIR</title>
         <link rel="stylesheet" type="text/css" href="css/webCV.css" media="screen" />
+        <script type="text/javascript" src="js/jquery-1.6.2.min.js"></script>
+        <script type="text/javascript" src="js/window.js"></script>
     </head>
     <body>
         <div id="container">
-            <div id="window">
-                <div class="label"><span><?php echo $arraypage[$pageactive]["label"];?><span></div>
-                <div class="body">
-                <?php include("pages/$page.php");?>
+           <div id="window">
+                <div class="label"><span><?php echo $arraypage[$pageactive]["label"];?><span>                <a id="move_up" class="down" href="#"> x </a>
+            </div>
+
+                <div id="body_window" class="body">
+                    <?php include("pages/$page.php");?>
                 </div>
             </div>
 
             <div id="taskbar" >
                 <div class="level1 menugroup">
                     <div class="itemlevel1 item1">
-                        <div class="label">Soumia ADJIR</div>
-                        <div class="level2 menugroup">
-                            <div class="itemlevel2 item1"><a href="index.php?page=comp" title="competences">Compétences</a></div>
+                        <div class="label">
+                            <span>Soumia ADJIR</span>
+                        </div>
+                        <div id="choice" class="level2 menugroup">
+                            <div class="itemlevel2 item1"><a title="competences">Compétences</a></div>
                             <div class="itemlevel2 item2"><a href="index.php?page=exp"  title="experiences">Expériences</a></div>
                             <div class="itemlevel2 item3"><a href="index.php?page=form" title="formations">Formations</a></div>
                             <div class="itemlevel2 item4"><a href="index.php?page=div" title="divers">Divers</a></div>
@@ -93,8 +100,8 @@
                     <div class="itemlevel1 item2">
                         <div class="label">Téléchargement</div>
                         <div class="level2 menugroup">
-                            <div class="itemlevel2 item1"><a href="#">cv format pdf</a></div>
-                            <div class="itemlevel2 item2"><a href="#">cv format doc</a></div>
+                            <div class="itemlevel2 item1"><a href="ressources/Soumia_adjir-cv.pdf"><img src="images/pdf.png" alt="pdf" /></a></div>
+                            <div class="itemlevel2 item2"><a href="ressources/adjir_soumia-cv.doc"><img src="images/word.png" alt="doc" /></a></div>
                         </div>
                     </div>
 
@@ -114,7 +121,7 @@
                         </div>
                     </div>
                     <div class="itemlevel1 item4">
-                        <div class="label">Horloge</div>
+                    <div class="label"><?php echo $time ; ?></div>
                     </div>
                 </div>
             </div>

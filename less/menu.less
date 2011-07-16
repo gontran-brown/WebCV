@@ -1,7 +1,7 @@
 #taskbar{
     .centering();
     bottom : 0;
-    background-color : #D2B48C;
+    background-color : @color1;
     border-radius : 15px;
 
     .menugroup{
@@ -23,9 +23,13 @@
 
                 .label{
                     cursor : default;
-                    color : #8B4513;
+                    color : @color2;
                     opacity : inherit;
                     font-weight : bold;
+
+                    a{
+                        visibility : hidden;
+                    }
                 }
 
                 .level2{
@@ -39,7 +43,7 @@
                     .itemlevel2:hover{
                         width : auto;
                         white-space : normal;
-                        background-color : #8B4513;
+                        background-color : @color2;
                         margin-bottom : 5px;
                         font-size : 18px;
                         border-radius : 15px;
@@ -47,7 +51,7 @@
 
                     .itemlevel2 a{
                         text-decoration : none;
-                        color : #9ACD32;
+                        color : @color5;
                         font-weight : bold ;
                     }
 

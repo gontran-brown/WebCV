@@ -19,7 +19,7 @@ html, body {
   min-width: 915px;
   margin: 0 5%;
   bottom: 0;
-  background-color: #D2B48C;
+  background-color: #d2b48c;
   border-radius: 15px;
 }
 #taskbar .menugroup.level1 {
@@ -38,9 +38,12 @@ html, body {
 }
 #taskbar .menugroup.level1 > div .label {
   cursor: default;
-  color: #8B4513;
+  color: #8b4513;
   opacity: inherit;
   font-weight: bold;
+}
+#taskbar .menugroup.level1 > div .label a {
+  visibility: hidden;
 }
 #taskbar .menugroup.level1 > div .level2 {
   line-height: 20px;
@@ -53,14 +56,14 @@ html, body {
 #taskbar .menugroup.level1 > div .level2 .itemlevel2:hover {
   width: auto;
   white-space: normal;
-  background-color: #8B4513;
+  background-color: #8b4513;
   margin-bottom: 5px;
   font-size: 18px;
   border-radius: 15px;
 }
 #taskbar .menugroup.level1 > div .level2 .itemlevel2 a {
   text-decoration: none;
-  color: #9ACD32;
+  color: #9acd32;
   font-weight: bold ;
 }
 #taskbar .menugroup.level1 > div .level2 > div {
@@ -79,31 +82,52 @@ html, body {
   display: none;
   bottom: -32px;
 }
-#window {
-  border-radius: 15px;
-}
 #window .label {
-  background: #D2B48C;
+  position: fixed;
+  width: 90%;
+  min-width: 915px;
+  margin: 0 5%;
+  background: #d2b48c;
   border: solid 1px none;
+  line-height: 20px;
   border-radius: 13px 13px 1px 1px;
   font-weight: bold;
-  color: #8B4513;
+  color: #8b4513;
+  top: 5px;
+}
+#window .label .down {
+  float: right;
+  margin-right: 20px;
+  text-decoration: none;
+  color: brown;
+}
+#window .label span {
   padding-left: 15px;
 }
 #window .body {
+  position: fixed;
+  width: 90%;
+  min-width: 915px;
+  margin: 0 5%;
+  top: 25px;
+  bottom: 38px;
   text-align: center;
+  background-color: rgba(220, 218, 213, 0.3);
   overflow: auto;
-  color: #D2B48C;
+  border-radius: 1px 1px 15px 15px;
+}
+#window .body > * {
+  padding: 0 15px;
 }
 #window .body h1 {
-  margin: 10px 0px 9px 0px;
-  font-weight: bold;
   font-size: 1.5em;
   color: #79a004;
+  margin: 0;
+  padding-top: 10px;
   text-align: justify;
 }
 #window .body p {
-  text-indent: 70px ;
+  text-indent: 50px ;
   text-align: justify;
 }
 #window .body ul {
@@ -118,6 +142,12 @@ html, body {
 }
 #window .body ul li {
   list-style-type: none;
+}
+#window .body ul li p {
+  text-indent: 0px;
+  width: 400px;
+  margin-top: -20px;
+  margin-left: 20px;
 }
 #window .body a {
   text-decoration: none;
