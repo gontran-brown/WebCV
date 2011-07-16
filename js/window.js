@@ -21,9 +21,7 @@
                 url : page_url,
                 cache : false,
                 success : function(data){
-                    var new_content = $("#window div.body",data);
-                    console.log(new_content);
-                    $body_window.append(new_content);
+                    $body_window.append($("#window div.body > *", data));
                 }
             });
         });
