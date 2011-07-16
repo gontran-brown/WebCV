@@ -69,6 +69,7 @@
         <title>CV Soumia ADJIR</title>
         <link rel="stylesheet" type="text/css" href="css/webCV.css" media="screen" />
         <script type="text/javascript" src="js/jquery-1.6.2.min.js"></script>
+        <script type="text/javascript" src="js/jquery.utils.js"></script>
         <script type="text/javascript" src="js/window.js"></script>
     </head>
     <body>
@@ -77,7 +78,7 @@
                 <div class="label"><span><?php echo $arraypage[$pageactive]["label"];?><span>                <a id="move_up" class="down" href="#"> x </a>
             </div>
 
-                <div id="body_window" class="body">
+                <div class="body">
                     <?php include("pages/$page.php");?>
                 </div>
             </div>
