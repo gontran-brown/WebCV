@@ -74,9 +74,11 @@
     </head>
     <body>
         <div id="container">
-           <div id="window">
-                <div class="label"><span><?php echo $arraypage[$pageactive]["label"];?><span>                <a id="move_up" class="down" href="#"> x </a>
-            </div>
+            <div id="window">
+                <div class="label">
+                    <span><?php echo $arraypage[$pageactive]["label"];?></span>
+                    <a id="move_up" class="down" href="#"> x </a>
+                </div>
 
                 <div class="body">
                     <?php include("pages/$page.php");?>
@@ -122,7 +124,7 @@
                         </div>
                     </div>
                     <div class="itemlevel1 item4">
-                    <div class="label"><?php echo $time ; ?></div>
+                        <div class="label"><?php echo $time ; ?></div>
                     </div>
                 </div>
             </div>

@@ -9,6 +9,7 @@
 
         $("#taskbar .level1.menugroup .itemlevel1.item1 :regex(class,^itemlevel2 item\\d+$)").children("a").click(function(e){
             e.preventDefault();
+            $("#window").show();
             var $button_menu = $(this);
             var $body_window = $button_menu
             .parents("#container")
@@ -19,9 +20,8 @@
 
             var $title_window = $button_menu
             .parents("#container")
-            .find("#window div.label");
+            .find("#window div.label > span:first-child");
             title_page = $(this).text();
-            console.log(title_page);
             $title_window.empty();
             $title_window.append(title_page);
 
