@@ -7,6 +7,10 @@
             .toggle();
         });
 
+        $("#window div.label").dblclick(function(){
+            $(this).parent().find("div.body").slideToggle("800");
+        });
+
         $("#taskbar .level1.menugroup .itemlevel1.item1 :regex(class,^itemlevel2 item\\d+$)").children("a").click(function(e){
             e.preventDefault();
             $("#window").show();

@@ -70,6 +70,8 @@
         <link rel="stylesheet" type="text/css" href="css/webCV.css" media="screen" />
         <script type="text/javascript" src="js/jquery-1.6.2.min.js"></script>
         <script type="text/javascript" src="js/jquery.utils.js"></script>
+        <script type="text/javascript" src="js/jScrollbar.jquery.js"></script>
+        <script type="text/javascript" src="js/jquery-mousewheel.js"></script>
         <script type="text/javascript" src="js/window.js"></script>
     </head>
     <body>
@@ -82,6 +84,9 @@
 
                 <div class="body">
                     <?php include("pages/$page.php");?>
+                    <div class="scrollbar">
+                        <a href="#" class="draggable"></a>
+                    </div>
                 </div>
             </div>
 
