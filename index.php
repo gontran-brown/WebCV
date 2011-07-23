@@ -68,10 +68,12 @@
         <meta name="keywords" content="" />
         <title>CV Soumia ADJIR</title>
         <link rel="stylesheet" type="text/css" href="css/webCV.css" media="screen" />
+        <link rel="stylesheet" type="text/css" href="css/jScrollbar.jquery.css" media="screen" />
         <script type="text/javascript" src="js/jquery-1.6.2.min.js"></script>
-        <script type="text/javascript" src="js/jquery.utils.js"></script>
-        <script type="text/javascript" src="js/jScrollbar.jquery.js"></script>
+        <script type="text/javascript" src="js/jquery-ui.js"></script>
         <script type="text/javascript" src="js/jquery-mousewheel.js"></script>
+        <script type="text/javascript" src="js/jScrollbar.jquery.js"></script>
+        <script type="text/javascript" src="js/jquery.utils.js"></script>
         <script type="text/javascript" src="js/window.js"></script>
     </head>
     <body>
@@ -83,9 +85,13 @@
                 </div>
 
                 <div class="body">
-                    <?php include("pages/$page.php");?>
-                    <div class="scrollbar">
-                        <a href="#" class="draggable"></a>
+                    <div class="jScrollbar">
+                        <div class="jScrollbar_mask">
+                            <?php include("pages/$page.php");?>
+                        </div>
+                        <div class="jScrollbar_draggable">
+                            <a href="#" class="draggable"></a>
+                        </div>
                     </div>
                 </div>
             </div>

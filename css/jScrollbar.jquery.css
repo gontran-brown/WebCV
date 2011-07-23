@@ -1,0 +1,40 @@
+.jScrollbar {
+	width:500px;
+	height:209px;
+	overflow:hidden;
+	position:relative;
+	background-color:#454547;
+	padding:10px
+}
+
+.jScrollbar .jScrollbar_mask {
+    width:460px;
+    position:relative;
+    top:0;
+    float:left
+}
+.jScrollbar .jScrollbar_mask * {
+    margin:0;
+    padding:0;
+    color:#FFF;
+    font-size:12px;
+}
+.jScrollbar .jScrollbar_draggable {
+    float:left;
+    width:13px;
+    height:209px;
+    overflow:hidden;
+    background:none;
+    background:transparent url('../images/bg_slider4.png') no-repeat;
+    margin-left:23px;
+    position:relative
+}
+.jScrollbar .jScrollbar_draggable a.draggable {
+    position:relative;
+    background:transparent url('../images/bg_draggable4.png') no-repeat;
+    display:block;
+    height:58px;
+    width:13px;
+    margin-left:0;
+    cursor:s-resize
+}

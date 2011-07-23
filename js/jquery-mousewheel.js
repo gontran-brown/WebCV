@@ -1,3 +1,13 @@
+/**
+ * 
+ * credits for this plugin go to brandonaaron.net
+ * 	
+ * unfortunately his site is down
+ * 
+ * @param {Object} up
+ * @param {Object} down
+ * @param {Object} preventDefault
+ */
 jQuery.fn.extend({
 	mousewheel: function(up, down, preventDefault) {
 		return this.hover(
