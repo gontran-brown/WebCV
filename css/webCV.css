@@ -169,7 +169,6 @@ html, body {
 }
 #window .body .jScrollbar_draggable a.draggable {
   position: absolute;
-  margin-left: 7px;
   top: 27px;
   background: transparent url('../images/bg_draggable4.png') no-repeat;
   display: block;
