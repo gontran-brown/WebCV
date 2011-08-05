@@ -1,104 +1,119 @@
 #window{
     .label{
         .centering();
-        background: @color1 ;
-        border: solid 1px none;
-        line-height: @title-bar;
-        border-radius: 13px 13px 1px 1px;
-        font-weight: bold;
-        color: @color2;
-        top: 5px;
+        background : @color1 ;
+        border : solid 1px none;
+        line-height : @title-bar;
+        border-radius : 13px 13px 1px 1px;
+        font-weight : bold;
+        color : @color2;
+        top : 5px;
 
         .down{
-            float: right;
-            margin-right: 20px;
-            text-decoration: none;
-            color: brown;
+            float : right;
+            margin-right : 20px;
+            text-decoration : none;
+            color : brown;
         }
 
         span{
-            padding-left: 15px;
+            padding-left : 15px;
         }
     }
 
     .body{
-        display: block;
+        .centering();
+        top : @title-bar + 5px;
+        bottom : @footer-bar + 6px;
+        text-align : center;
+        background-color : @color4;
+        overflow : auto;
+        border-radius : 1px 1px 15px 15px;
 
-        .jScrollbar_mask{
-            .centering();
-            top: @title-bar + 5px;
-            bottom: @footer-bar + 6px;
-            text-align: center;
-            background-color: @color4;
-            overflow: hidden;
-            position: absolute;
-            border-radius: 1px 1px 15px 15px;
+        > *{
+            padding : 0 12px;
+        }
+/*ul{
+ * li{
+ * line-height: 20px;
+ * }
+ * }
+ *p{
+ white-space: nowrap;
+ }
+ * */
+        h1{
+            font-size: 1.5em;
+            color: @color3;
+            margin : 0;
+            padding-top : 10px;
+            text-align : justify;
+        }
 
-            > *{
-                margin: 0;
-                color: #FFF;
-                font-size: 12px;
-                padding: 0 15px;
-            }
+        p{
+            text-indent : 50px ;
+            text-align : justify;
+        }
 
-            h1{
-                font-size: 1.5em;
-                color: @color3;
-                margin: 0;
-                padding-top: 10px;
-                overflow: auto;
-                text-align: justify;
-            }
+        ul{
+            list-style-position : inside;
+        }
+
+        li{
+            list-style-position : outside;
+            text-align : justify;
+        }
+
+        ul li:before{
+            content: "# ";
+            line-height: 20px;
+        }
+
+        ul li{
+            list-style-type : none;
 
             p{
-                text-indent: 50px ;
-                text-align: justify;
-            }
-
-            ul{
-                list-style-position: inside;
-            }
-
-            li{
-                list-style-position: outside;
-                text-align: justify;
-            }
-
-            ul li:before{
-                content: "# ";
-            }
-
-            ul li{
-                list-style-type: none;
-
-                p{
-                    text-indent: 0px;
-                    width: 400px;
-                    margin-top: -20px;
-                    margin-left: 20px;
-                }
-            }
-
-            a{
-                text-decoration: none;
+                width : 400px;
+                margin-top : -20px;
+                margin-left : 20px;
+                white-space: nowrap;
             }
         }
 
-        .jScrollbar_draggable{
-            bottom: @footer-bar + 6px;
-            float: right;
-            width: 7%;
+        a{
+            text-decoration : none;
+        }
+
+        .jScrollbar{
+            width: 97%;
+            height: 100%;
             overflow: hidden;
             background: none;
 
-            a.draggable{
-                position: absolute;
-                top: @title-bar + 7px;
-                background: transparent url('../images/bg_draggable4.png') no-repeat;
-                display: block;
-                height: 58px;
+            .jScrollbar_mask{
+                float: left;
+                position: relative;
+                width: 96%;
+            }
+
+            .jScrollbar_draggable{
+                float: left;
+                height: 100%;
+                background: none;
+                overflow: hidden;
+                position: relative;
                 width: 13px;
-                cursor: s-resize;
+                top: 3px;
+                margin-left: 18px;
+
+                a.draggable {
+                    position: relative;
+                    background: transparent url('../images/bg_draggable4.png') no-repeat;
+                    display: block;
+                    height: 58px;
+                    width: 13px;
+                    cursor: default;
+                }
             }
         }
     }

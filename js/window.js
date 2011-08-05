@@ -2,6 +2,7 @@
     function($){
     $(document).ready(function(){
 		$('.jScrollbar').jScrollbar();
+
         $("#move_up").click(function(e){
             $(this)
             .parents("#window")
@@ -18,7 +19,7 @@
             var $button_menu = $(this);
             var $body_window = $button_menu
             .parents("#container")
-            .find("#window div.body");
+             .find("#window div.body div.jScrollbar .jScrollbar_mask");
 
             $body_window.empty();
             var page_url = $button_menu.attr("href");
@@ -35,8 +36,9 @@
                 url : page_url,
                 cache : false,
                 success : function(data){
-                    var new_content = $("#window div.body",data);
-                    $body_window.replaceWith(new_content);
+                    var new_content = $("#window div.body div.jScrollbar .jScrollbar_mask", data);
+
+                    $("#mask").append(new_content);
                 }
             });
         });
