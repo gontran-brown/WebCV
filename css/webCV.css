@@ -105,9 +105,6 @@ html, body {
   padding-left: 15px;
 }
 #window .body {
-  display: block;
-}
-#window .body .jScrollbar_mask {
   position: fixed;
   width: 90%;
   min-width: 915px;
@@ -116,63 +113,82 @@ html, body {
   bottom: 38px;
   text-align: center;
   background-color: rgba(220, 218, 213, 0.3);
-  overflow: hidden;
-  position: absolute;
+  overflow: auto;
   border-radius: 1px 1px 15px 15px;
+  /*ul{
+ * li{
+ * line-height: 20px;
+ * }
+ * }
+ *p{
+ white-space: nowrap;
+ }
+ * */
+
 }
-#window .body .jScrollbar_mask > * {
-  margin: 0;
-  color: #FFF;
-  font-size: 12px;
-  padding: 0 15px;
+#window .body > * {
+  padding: 0 12px;
 }
-#window .body .jScrollbar_mask h1 {
+#window .body h1 {
   font-size: 1.5em;
   color: #79a004;
   margin: 0;
   padding-top: 10px;
-  overflow: auto;
   text-align: justify;
 }
-#window .body .jScrollbar_mask p {
+#window .body p {
   text-indent: 50px ;
   text-align: justify;
 }
-#window .body .jScrollbar_mask ul {
+#window .body ul {
   list-style-position: inside;
 }
-#window .body .jScrollbar_mask li {
+#window .body li {
   list-style-position: outside;
   text-align: justify;
 }
-#window .body .jScrollbar_mask ul li:before {
+#window .body ul li:before {
   content: "# ";
+  line-height: 20px;
 }
-#window .body .jScrollbar_mask ul li {
+#window .body ul li {
   list-style-type: none;
 }
-#window .body .jScrollbar_mask ul li p {
-  text-indent: 0px;
+#window .body ul li p {
   width: 400px;
   margin-top: -20px;
   margin-left: 20px;
+  white-space: nowrap;
 }
-#window .body .jScrollbar_mask a {
+#window .body a {
   text-decoration: none;
 }
-#window .body .jScrollbar_draggable {
-  bottom: 38px;
-  float: right;
-  width: 7%;
+#window .body .jScrollbar {
+  width: 97%;
+  height: 100%;
   overflow: hidden;
   background: none;
 }
-#window .body .jScrollbar_draggable a.draggable {
-  position: absolute;
-  top: 27px;
+#window .body .jScrollbar .jScrollbar_mask {
+  float: left;
+  position: relative;
+  width: 96%;
+}
+#window .body .jScrollbar .jScrollbar_draggable {
+  float: left;
+  height: 100%;
+  background: none;
+  overflow: hidden;
+  position: relative;
+  width: 13px;
+  top: 3px;
+  margin-left: 18px;
+}
+#window .body .jScrollbar .jScrollbar_draggable a.draggable {
+  position: relative;
   background: transparent url('../images/bg_draggable4.png') no-repeat;
   display: block;
   height: 58px;
   width: 13px;
-  cursor: s-resize;
+  cursor: default;
 }
