@@ -37,7 +37,6 @@
                 cache : false,
                 success : function(data){
                     var new_content = $("#window div.body div.jScrollbar .jScrollbar_mask", data);
-
                     $("#mask").append(new_content);
                 }
             });
