@@ -2,6 +2,11 @@
     function($){
     $(document).ready(function(){
 		$('.jScrollbar').jScrollbar();
+
+        $(window).bind("resize", function(){
+            $('.jScrollbar').jScrollbar();
+        });
+
         $("#move_up").click(function(e){
             $(this)
             .parents("#window")
