@@ -1,14 +1,14 @@
 .jScrollbar {
-	width:500px;
-	height:209px;
+	//width:500px;
+	height:100%;
 	overflow:hidden;
 	position:relative;
-	background-color:#454547;
+	//background-color:#454547;
 	padding:10px
 }
 
 .jScrollbar .jScrollbar_mask {
-    width:460px;
+    width:95.9%;
     position:relative;
     top:0;
     float:left
@@ -21,11 +21,11 @@
 }
 .jScrollbar .jScrollbar_draggable {
     float:left;
-    width:13px;
-    height:209px;
+    //width:13px;
+    height:100%;
     overflow:hidden;
     background:none;
-    background:transparent url('../images/bg_slider4.png') no-repeat;
+    //background:transparent url('../images/bg_slider4.png') no-repeat;
     margin-left:23px;
     position:relative
 }
