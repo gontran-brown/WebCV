@@ -80,7 +80,7 @@ html, body {
   width: 200px;
   left: 0px;
   display: none;
-  bottom: -32px;
+  bottom: - 32px;
 }
 #window .label {
   position: fixed;
@@ -145,10 +145,26 @@ html, body {
 }
 #window .body ul li p {
   text-indent: 0px;
-  width: 400px;
-  margin-top: -20px;
   margin-left: 20px;
 }
 #window .body a {
   text-decoration: none;
+}
+#window .body .scrollbar {
+  float: left;
+  width: 13px;
+  height: 209px;
+  overflow: hidden;
+  background: none;
+  background: transparent url('../images/bg_slider4.png') no-repeat;
+  margin-left: 23px;
+}
+#window .body .scrollbar position:relative a.draggable {
+  position: relative;
+  background: transparent url('../images/bg_draggable4.png') no-repeat;
+  display: block;
+  height: 58px;
+  width: 13px;
+  margin-left: 0;
+  cursor: s-resize;
 }
