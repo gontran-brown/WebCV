@@ -30,6 +30,12 @@
             title_page = $(this).text();
             $title_window.empty();
             $title_window.append(title_page);
+            /*c'est ici que je veux aire la modif
+            * je pense que tu as compris
+            * que je veux redimensionner ma fenetre je dois relancer une taille de scrollbar*/
+            $("#window div.body").resize(function(){
+                $body_window.children(".jScrollbar").jScrollbar();
+            });
 
             $.ajax({
                 type : "GET",
