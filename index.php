@@ -81,7 +81,7 @@
             <div id="window">
                 <div class="label">
                     <span><?php echo $arraypage[$pageactive]["label"];?></span>
-                    <a id="move_up" class="down" href="#"> x </a>
+                    <a id="move_up" class="down" > x </a>
                 </div>
 
                 <div class="body">
