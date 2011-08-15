@@ -163,12 +163,8 @@ html, body {
 #window .body a {
   text-decoration: none;
 }
-#window .body .content {
-  width: 100%;
-}
 #window .body .jScrollbar {
-  width: 100%;
-  margin-right: 100px;
+  width: 97%;
   height: 100%;
   overflow: hidden;
   background: none;
