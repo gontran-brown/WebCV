@@ -111,23 +111,13 @@ html, body {
   margin: 0 5%;
   top: 25px;
   bottom: 38px;
-  text-align: center;
   background-color: rgba(220, 218, 213, 0.3);
   overflow: auto;
   border-radius: 1px 1px 15px 15px;
-  /*ul{
- * li{
- * line-height: 20px;
- * }
- * }
- *p{
- white-space: nowrap;
- }
- * */
-
 }
 #window .body > * {
   padding: 0 12px;
+  line-height: 22px;
 }
 #window .body h1 {
   font-size: 1.5em;
@@ -135,33 +125,28 @@ html, body {
   margin: 0;
   padding-top: 10px;
   text-align: justify;
+  padding-bottom: 10px;
 }
-#window .body p {
-  text-indent: 50px ;
-  text-align: justify;
+#window .body .title {
+  text-decoration: underline;
+  font-weight: bold;
 }
-#window .body ul {
-  list-style-position: inside;
-}
-#window .body li {
-  list-style-position: outside;
-  text-align: justify;
+#window .body a {
+  text-decoration: none;
 }
 #window .body ul li:before {
   content: "# ";
-  line-height: 20px;
 }
 #window .body ul li {
   list-style-type: none;
 }
-#window .body ul li p {
-  width: 400px;
-  margin-top: -20px;
-  margin-left: 20px;
-  white-space: nowrap;
+#window .body ul li ul li {
+  text-indent: 40px;
+  display: block;
 }
-#window .body a {
-  text-decoration: none;
+#window .body span.indent, #window .body p.indent {
+  text-indent: 40px;
+  display: inline-block;
 }
 #window .body .jScrollbar {
   width: 97%;

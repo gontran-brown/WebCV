@@ -25,63 +25,52 @@
         .centering();
         top : @title-bar + 5px;
         bottom : @footer-bar + 6px;
-        text-align : center;
         background-color : @color4;
         overflow : auto;
         border-radius : 1px 1px 15px 15px;
 
         > *{
             padding : 0 12px;
+            line-height: 22px;
         }
-/*ul{
- * li{
- * line-height: 20px;
- * }
- * }
- *p{
- white-space: nowrap;
- }
- * */
+
         h1{
             font-size: 1.5em;
             color: @color3;
             margin : 0;
             padding-top : 10px;
             text-align : justify;
+            padding-bottom: 10px;
         }
 
-        p{
-            text-indent : 50px ;
-            text-align : justify;
-        }
-
-        ul{
-            list-style-position : inside;
-        }
-
-        li{
-            list-style-position : outside;
-            text-align : justify;
-        }
-
-        ul li:before{
-            content: "# ";
-            line-height: 20px;
-        }
-
-        ul li{
-            list-style-type : none;
-
-            p{
-                width : 400px;
-                margin-top : -20px;
-                margin-left : 20px;
-                white-space: nowrap;
-            }
+        .title {
+            text-decoration: underline;
+            font-weight: bold;
         }
 
         a{
             text-decoration : none;
+        }
+
+        ul{
+            li:before {
+                content: "# ";
+            }
+
+            li {
+                list-style-type: none;
+
+                ul li {
+                    text-indent: 40px;
+                    display: block;
+                }
+            }
+        }
+
+        span.indent,
+        p.indent{
+            text-indent: 40px;
+            display: inline-block;
         }
 
         .jScrollbar{

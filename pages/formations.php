@@ -1,31 +1,31 @@
 <h1>Mes formations</h1>
 <ul>
-	<li><span>Septembre 2010/ juin 2011</span><br />
+	<li><span class="title">Septembre 2010/ juin 2011 :</span>
 		<ul>
-			<li><p>Obtention de la Lincence Informatique
-			(Université de Valenciennes)</p></li>
+			<li>Obtention de la Lincence Informatique
+			(Université de Valenciennes)</li>
 		</ul>
 	</li>
-	<li><span>Septembre 2008/Juin 2010</span><br />
+	<li><span class="title">Septembre 2008/Juin 2010 :</span>
 		<ul>
-			<li><p>Obtention du DEUST IOSI :
+			<li>Obtention du DEUST IOSI :
 		Informatique d'organisation et Systeme d'Information
-			(Université de Valenciennes)</p></li>
+			(Université de Valenciennes)</li>
 		</ul>
 	</li>
-	<li><span>Septembre 2007/Juin 2008</span><br />
+	<li><span class="title">Septembre 2007/Juin 2008 :</span>
 		<ul>
-			<li><p>Première année Licence Biologie
+			<li>Première année Licence Biologie
 			(Université de Lille 1
 		 Science et Technologies
-			 Villeneuve d'Ascq)</p></li>
+			 Villeneuve d'Ascq)</li>
 		</ul>
 	</li>
-	<li><span>Septembre 2006/Juin 2007</span><br />
+	<li><span class="title">Septembre 2006/Juin 2007 :</span>
 		<ul>
-			<li><p>Obtention Bac STL
+			<li>Obtention Bac STL
 			Spécialité : Biochimie Génie Biologique
-			(Lycée de l'Escaut à Valenciennes)</p></li>
+			(Lycée de l'Escaut à Valenciennes)</li>
 		</ul>
 	</li>
 </ul>
